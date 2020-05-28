@@ -24,6 +24,10 @@ module: {
             use: {
                 loader: 'babel-loader' // specify the loader
             } 
+        },
+        {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
         }
     ]
 }
